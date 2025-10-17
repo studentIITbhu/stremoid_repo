@@ -1,7 +1,7 @@
 // src/controllers/uploadController.js
 const csvParser = require('csv-parser');
 const { validateRow } = require('../utils/validator');
-const { insertOrUpdateProduct } = require('../models/productModel');
+const { insertOrUpdateProduct } = require('../models/projectModel');
 
 async function uploadCSV(req, res) {
   try {
@@ -55,3 +55,4 @@ async function uploadCSV(req, res) {
 }
 
 module.exports = { uploadCSV };
+

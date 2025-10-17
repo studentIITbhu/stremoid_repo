@@ -1,8 +1,8 @@
 ### Get all products
-GET http://localhost:8000/api/products
+GET http://localhost:8000/products
 
 ### Create a new product
-POST http://localhost:8000/api/products
+POST http://localhost:8000/products
 Content-Type: application/json
 
 {
@@ -12,10 +12,10 @@ Content-Type: application/json
 }
 
 ### Get a product by ID
-GET http://localhost:8000/api/products/PRODUCT_ID_HERE
+GET http://localhost:8000/products/PRODUCT_ID_HERE
 
 ### Update a product
-PUT http://localhost:8000/api/products/PRODUCT_ID_HERE
+PUT http://localhost:8000/products/PRODUCT_ID_HERE
 Content-Type: application/json
 
 {
@@ -24,4 +24,4 @@ Content-Type: application/json
 }
 
 ### Delete a product
-DELETE http://localhost:8000/api/products/PRODUCT_ID_HERE
+DELETE http://localhost:8000/products/PRODUCT_ID_HERE
