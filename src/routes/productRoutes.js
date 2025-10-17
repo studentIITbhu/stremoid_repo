@@ -4,6 +4,8 @@ const router = express.Router();
 const { getAllProducts, search } = require('../controllers/productController');
 router.post('/', getAllProducts);  
 
+router.get('/', getAllProducts); 
+
 
 
 
