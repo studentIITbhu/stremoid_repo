@@ -1,5 +1,6 @@
 
 const db = require('../config/db');
+
 exports.getAllProducts = async (req, res) => {
   try {
     const [results] = await db.query("SELECT * FROM products");
