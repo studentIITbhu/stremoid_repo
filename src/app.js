@@ -10,7 +10,7 @@ const productRoutes = require('./routes/productRoutes'); // keep existing produc
 app.use(express.json());
 
 // upload endpoint
-app.post('/upload', upload.single('file'), uploadCSV);
+//app.post('/upload', upload.single('file'), uploadCSV);
 
 // mount product routes (list/search)
 app.use('/products', productRoutes);

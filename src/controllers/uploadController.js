@@ -1,4 +1,5 @@
 // src/controllers/uploadController.js
+const db = require('../config/db');
 const csvParser = require('csv-parser');
 const { validateRow } = require('../utils/validator');
 const { insertOrUpdateProduct } = require('../models/projectModel');

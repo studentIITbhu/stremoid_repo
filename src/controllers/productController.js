@@ -1,4 +1,5 @@
-// Correct version for mysql2 promise pool
+
+const db = require('../config/db');
 exports.getAllProducts = async (req, res) => {
   try {
     const [results] = await db.query("SELECT * FROM products");
@@ -11,6 +12,7 @@ exports.getAllProducts = async (req, res) => {
 
 exports.createProduct = async (req, res) => {
   const { name, price, description } = req.body;
+  
   if (!name || !price) {
     return res.status(400).json({ error: "Missing name or price" });
   }
