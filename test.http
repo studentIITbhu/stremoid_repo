@@ -1,0 +1,27 @@
+### Get all products
+GET http://localhost:8000/api/products
+
+### Create a new product
+POST http://localhost:8000/api/products
+Content-Type: application/json
+
+{
+  "name": "Laptop",
+  "price": 59999,
+  "description": "A high-performance laptop for robotics work"
+}
+
+### Get a product by ID
+GET http://localhost:8000/api/products/PRODUCT_ID_HERE
+
+### Update a product
+PUT http://localhost:8000/api/products/PRODUCT_ID_HERE
+Content-Type: application/json
+
+{
+  "name": "Updated Laptop",
+  "price": 64999
+}
+
+### Delete a product
+DELETE http://localhost:8000/api/products/PRODUCT_ID_HERE
